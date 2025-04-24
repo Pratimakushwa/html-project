@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    }
+    .main{
+        display: flex;
+        justify-content: space-between;
+        
+        align-items: center;
+        background-color:white;
+        padding: 15px;
+    }
+    .main-link{
+        display: flex;
+        list-style: none;
+        align-items: center;
+        gap: 50px;
+
+       
+    }
+    .main input{
+        padding: 5px;
+    }
+    .sub-links{
+        display:flex ;
+        list-style: none;
+        align-items: center;
+        background-color: white;
+        padding: 10px ;
+        gap: 40px;
+        
+        justify-content: space-evenly;
+
+    }
+   
+    
+
+
+    .sub-links li a{
+    text-decoration: none;
+    color: black;
+    }
+   
+    .navbar{
+      
+        position: fixed;
+        top: 0;
+        width: 100%;
+        
+    }
+    
+    .navbar input{
+        
+        border-style: none;
+    }
+    
+    
+    
+    .navbar label{
+        display: none;
+        padding-left: 70%;
+    
+        
+    }
+    #click{
+        display: none;
+    }
+    /* #click:checked~.navbar .main-link,#click:checked ~ .navbar .sub-links{
+        display: block;
+
+    } */
+    @media screen and (max-width:459px){
+        .main-link,.sub-links{
+            display: none;
+            flex-direction: column;
+            background-color: aquamarine;
+            
+            overflow: hidden;
+            
+            width: 100%;
+        
+            position: sticky;
+            top: 0;
+            gap: 40px;
+            
+        }
+        .sub-links{
+            display: none;
+            flex-direction: column;
+            background-color: aquamarine;
+            
+            overflow: hidden;
+            gap: 30px;
+            width: 100vh;
+            height: 100vh;
+            position: sticky;
+            top: 0;
+            
+            
+            
+        }
+        
+
+        #click:checked~.navbar .main-link,#click:checked ~ .navbar .sub-links{
+            display: block;
+            
+    
+        }
+        .navbar label{
+            display:block;
+        }
+        .main{
+            flex-wrap: wrap;
+            
+        }
+       
+    }
+    
+    
+    
+
+    .hero{
+        
+        display: flex;
+        justify-content: space-between;
+    }
+    .hero img{
+        width: 100%;
+        padding: 10px;
+        
+    }
+    @media screen and (max-width:459px){
+        .hero {
+            
+            flex-wrap: wrap;
+        }
+    }
+
+   .shop{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+   }
+  
+
+   .fit{
+    align-items: center;
+    padding:20px;
+   }
+   .buy{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+   }
+   .black{
+    box-shadow: 5px 7px 9px 8px rgb(238, 236, 232);
+   }
+   .lost{
+    box-shadow: 5px 7px 9px 8px rgb(239, 238, 235);
+   }
+   .fog{
+    box-shadow: 5px 7px 9px 8px rgb(226, 225, 222);
+   }
+   .blue{
+    box-shadow: 5px 7px 9px 8px rgb(236, 234, 232);
+   }
+   
+   .latest{
+    align-items: center;
+    padding: 25px;
+   }
+   .collection{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+    flex-wrap: wrap;
+   }
+   .collection img{
+     width: 280px;
+   }
+   .collection div{
+    width: 280px;
+  }
+   @media screen and (max-width:459px){
+    .collection img {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .collection div{
+        flex-wrap: wrap;
+    }
+   }
+   .drop{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    flex-wrap: wrap;
+   }
+   .drop img{
+    width: 280px;
+    box-shadow:5px 7px 9px 8px rgb(236, 234, 232); ;
+   }
+   @media screen and (max-width:459px){
+    .drop img {
+        flex-wrap: wrap;
+        
+        padding: 30px;
+        }
+        .drop div{
+            flex-wrap: wrap;
+        }
+   }
+
+
+
+   .Category-men{
+    display: flex;
+    padding: 30px;
+    flex-wrap: wrap;
+   }
+   .Category-men img{
+    width: 240px;
+   }
+   .Category-men div{
+    width: 240px;
+   }
+
+   @media screen and (max-width:459px){
+    .Category-men img{
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 30px;
+        
+    }
+    .Category-men div{
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 30px;
+        
+    }
+   }
+   .Category{
+    display: flex;
+    padding: 30px;
+    flex-wrap: wrap;
+   }
+   .Category img{
+    width: 240px;
+   }
+   .Category div{
+    width: 240px;
+   }
+
+   @media screen and (max-width:459px){
+    .Category img{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .Category div{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+   }
+   .plus-size{
+    display: flex;
+    align-items: center;
+
+    flex-wrap: wrap;
+   }
+  
+   .Categorys{
+    display: flex;
+    padding: 30px;
+    flex-wrap: wrap;
+   }
+   .Categorys img{
+    width: 240px;
+   }
+   .Categorys div{
+    width: 240px;
+   }
+   @media screen and (max-width:459px){
+    .Categorys img{
+        flex-wrap: wrap;
+        
+       width: 100%;
+        
+    }
+    .Categorys div{
+        flex-wrap: wrap;
+        
+       width: 100%;
+        
+    }
+   }
+   .footer{
+    
+   padding: 30px;
+   
+
+    background-color: rgb(66, 7, 7);
+    
+   }
+   .service{
+    
+    display: flex;
+    padding: 10px;
+    justify-content: space-evenly;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    
+
+   }
+   .service a{
+    color: aliceblue;
+   }
+   .service h3{
+    color: yellow;
+   }
+   .service h1{
+    color: yellow;
+   }
+   .service i{
+    font-size: 40px;
+    color: aliceblue;
+   }
+
+   .keep input{
+    padding: 10px;
+    background-color: black;
+   }
+   .keep button{
+    padding: 10px;
+    background-color: yellow;
+   }
+    @media screen and (max-width:459px){
+        .service{
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .service div{
+            flex-wrap: wrap;
+            width: 100%;
+        }
+    }
