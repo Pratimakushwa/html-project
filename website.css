@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&display=swap');
 *{
     margin: 0;
@@ -6,23 +7,50 @@
     }
     .main{
         display: flex;
+        
         justify-content: space-between;
         
         align-items: center;
         background-color:white;
-        padding: 15px;
+        padding: 28px 12%;
+        transition: all.50s case;
     }
     .main-link{
         display: flex;
         list-style: none;
         align-items: center;
-        gap: 50px;
+        
 
        
     }
-    .main input{
-        padding: 5px;
+    .main-link a {
+        margin: 0px 30px;
+        padding: 5px 0;
+        transition: all,50s ease;
     }
+    .icon{
+        display: flex;
+        align-items: center;
+         padding-left: 30px;
+        
+    }
+    .icon a{
+        margin-right: 25px;
+        margin-left: 10px;
+        color: black;
+        
+    }
+    .icon input{
+        padding: 5px;
+        padding-left: 30px;
+        border-style: none;
+    }
+    .icon i{
+        margin-right: 25px;
+    
+        
+    }
+   
     .sub-links{
         display:flex ;
         list-style: none;
@@ -34,15 +62,17 @@
         justify-content: space-evenly;
 
     }
-   
+   .main ul{
+    display: flex;
+   }
     
 
 
-    .sub-links li a{
+    .sub-links a{
     text-decoration: none;
     color: black;
     }
-   
+    
     .navbar{
       
         position: fixed;
@@ -60,62 +90,63 @@
     
     .navbar label{
         display: none;
-        padding-left: 70%;
+    
     
         
     }
     #click{
-        display: none;
+        display:none;
     }
     /* #click:checked~.navbar .main-link,#click:checked ~ .navbar .sub-links{
         display: block;
 
     } */
-    @media screen and (max-width:459px){
-        .main-link,.sub-links{
+    @media screen and (max-width:450px){
+        
+        .sub-links {
             display: none;
-            flex-direction: column;
-            background-color: aquamarine;
-            
-            overflow: hidden;
-            
+            position:absolute;
+          
             width: 100%;
-        
-            position: sticky;
-            top: 0;
-            gap: 40px;
             
-        }
-        .sub-links{
-            display: none;
             flex-direction: column;
-            background-color: aquamarine;
-            
-            overflow: hidden;
-            gap: 30px;
-            width: 100vh;
-            height: 100vh;
-            position: sticky;
-            top: 0;
-            
-            
-            
-        }
-        
+            z-index: 10000;
+            background-color: rgb(5, 66, 46);
 
-        #click:checked~.navbar .main-link,#click:checked ~ .navbar .sub-links{
-            display: block;
             
-    
         }
-        .navbar label{
-            display:block;
-        }
-        .main{
-            flex-wrap: wrap;
+        .main ul{
+            display: none;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            flex-direction: column;
+            z-index: 100000;
+            width: 100%;
             
+            
+            background-color: rgb(5, 66, 46);
+
+
         }
        
+      
+       .navbar label{
+        display: block;
+    }
+    
+    
+    .navbar ul li{
+        padding: 12px;
+    }
+    #click:checked~.navbar .main-link,#click:checked ~ .navbar .sub-links{
+        display: block;
+
+
+
+        
+       
+    }
     }
     
     
@@ -192,6 +223,7 @@
     }
     .collection div{
         flex-wrap: wrap;
+        width: 100%;
     }
    }
    .drop{
@@ -212,6 +244,7 @@
         }
         .drop div{
             flex-wrap: wrap;
+            width: 100%;
         }
    }
 
