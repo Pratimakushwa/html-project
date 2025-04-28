@@ -105,13 +105,13 @@
         
         .sub-links {
             display: none;
-            position:absolute;
+            position:relative;
           
             width: 100%;
             
             flex-direction: column;
-            z-index: 10000;
-            background-color: rgb(5, 66, 46);
+            
+            background-color: darkslategrey;
 
             
         }
@@ -121,11 +121,11 @@
             top: 60px;
             left: 0;
             flex-direction: column;
-            z-index: 100000;
+           z-index: 4;
             width: 100%;
             
             
-            background-color: rgb(5, 66, 46);
+            background-color:darkslategray;
 
 
         }
@@ -187,17 +187,20 @@
     flex-wrap: wrap;
     width: 100%;
    }
+   .buy del{
+    text-decoration: line-through;
+   }
    .black{
-    box-shadow: 5px 7px 9px 8px rgb(238, 236, 232);
+    box-shadow: 2px 3px 4px 5px rgb(238, 236, 232);
    }
    .lost{
-    box-shadow: 5px 7px 9px 8px rgb(239, 238, 235);
+    box-shadow: 2px 3px 4px 5px rgb(239, 238, 235);
    }
    .fog{
-    box-shadow: 5px 7px 9px 8px rgb(226, 225, 222);
+    box-shadow: 2px 3px 4px 5px rgb(226, 225, 222);
    }
    .blue{
-    box-shadow: 5px 7px 9px 8px rgb(236, 234, 232);
+    box-shadow: 2px 3px 4px 5px rgb(236, 234, 232);
    }
    
    .latest{
@@ -236,11 +239,15 @@
     width: 280px;
     box-shadow:5px 7px 9px 8px rgb(236, 234, 232); ;
    }
+   .drop del{
+    text-decoration:line-through ;
+   }
    @media screen and (max-width:459px){
     .drop img {
         flex-wrap: wrap;
         
         padding: 30px;
+        width: 100%;
         }
         .drop div{
             flex-wrap: wrap;
@@ -252,21 +259,22 @@
 
    .Category-men{
     display: flex;
-    padding: 30px;
+    padding: 20px;
     flex-wrap: wrap;
    }
    .Category-men img{
-    width: 240px;
+    width: 230px;
    }
    .Category-men div{
-    width: 240px;
+    width: 230px;
    }
+   
 
    @media screen and (max-width:459px){
     .Category-men img{
         flex-wrap: wrap;
         width: 100%;
-        padding: 30px;
+        padding: 20px;
         
     }
     .Category-men div{
@@ -278,14 +286,14 @@
    }
    .Category{
     display: flex;
-    padding: 30px;
+    padding: 20px;
     flex-wrap: wrap;
    }
    .Category img{
-    width: 240px;
+    width: 230px;
    }
    .Category div{
-    width: 240px;
+    width: 230px;
    }
 
    @media screen and (max-width:459px){
@@ -300,9 +308,24 @@
    }
    .plus-size{
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   }
+  
+   .plus-size img{
     align-items: center;
 
-    flex-wrap: wrap;
+    width: 280px;
+   }
+   @media screen and (max-width:459px){
+    .plus-size img{
+        flex-wrap: wrap;
+        width: 380px;
+    }
+    .plus-size div{
+        flex-wrap: wrap;
+        width: 100%;
+    }
    }
   
    .Categorys{
@@ -311,10 +334,10 @@
     flex-wrap: wrap;
    }
    .Categorys img{
-    width: 240px;
+    width: 270px;
    }
    .Categorys div{
-    width: 240px;
+    width: 270px;
    }
    @media screen and (max-width:459px){
     .Categorys img{
@@ -370,12 +393,15 @@
     background-color: yellow;
    }
     @media screen and (max-width:459px){
-        .service{
+        .footer div{
             flex-wrap: wrap;
             width: 100%;
         }
+        .footer{
+            width: 400px;
+        }
         .service div{
             flex-wrap: wrap;
-            width: 100%;
+            width: 400px;
         }
     }
