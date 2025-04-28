@@ -1,0 +1,38 @@
+.giva{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.giva i{
+    gap: 30px;
+}
+.input input{
+    padding: 20px;
+    
+}
+.input input{
+   
+    width: 500px;
+    
+}
+.input i{
+   
+    gap: 30px;
+    
+}
+.ii i{
+    gap: 40px;
+}
+.drop{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+
+}
+.drop a{
+    text-decoration: none;
+    color:black;
+}
+select{
+    border-style: none;
+}
