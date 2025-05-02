@@ -15,6 +15,62 @@
     width: 500px;
     
 }
+
+.giva{
+  position: fixed;
+    top: 0;
+    
+    width: 100%;
+    
+}
+
+@media  screen and (max-width:450px) {
+    .giva img{
+        width: 100%;
+    }
+    .input input{
+        width: 200px;
+    
+        padding-top: 50%;
+    }
+}
+
+.drop{
+      
+    position: fixed;
+    top: 50px;
+    
+    width: 100%;
+    
+}
+ /* .navbar label{
+    display: none;
+}
+#click{
+    display:none;
+}  */
+ #click:checked~ .navbar section{
+    display: block;
+} 
+@media screen and (max-width:450px){
+    .navbar select{
+        display: none;
+        position: relative;
+        top: 20px;
+        width: 100%;
+        flex-direction: column;
+        background-color: aqua;
+    }
+    .navbar label{
+        display: block;
+    }
+    
+}
+
+
+.hero img{
+    padding-top: 90px;
+}
 .input i{
    
     gap: 30px;
@@ -35,4 +91,58 @@
 }
 select{
     border-style: none;
+}
+.akshaya{
+    display: flex;
+}
+.akshaya img{
+    width: 200px;
+    height: 200px;
+}
+.akshaya p{
+  padding-left: 20px;
+}
+.design {
+    display: flex;
+    padding: 20px;
+
+}
+.design img{
+   width: 350px;
+   height: 350px;
+    
+}
+.design button{
+  width: 300px;
+  padding: 10px;
+  background-color: rgb(231, 184, 199);
+  border-style: none;
+}
+.gold{
+    color:gray
+}
+.free{
+    color:rgb(16, 16, 137)
+}
+.designs {
+    display: flex;
+    padding: 20px;
+
+}
+.designs img{
+   width: 350px;
+   height: 350px;
+    
+}
+.designs button{
+  width: 300px;
+  padding: 10px;
+  background-color: rgb(231, 184, 199);
+  border-style: none;
+}
+.gold{
+    color:gray
+}
+.free{
+    color:rgb(16, 16, 137)
 }
